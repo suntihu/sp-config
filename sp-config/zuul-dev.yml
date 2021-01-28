@@ -36,5 +36,5 @@ management:
   endpoints:
     web:
       exposure:
-        include: hystrix.stream #可以用 "*" 暴露所有監控端點
+        include: "*" #可以用 "*" 暴露所有監控端點
  
