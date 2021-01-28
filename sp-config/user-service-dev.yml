@@ -6,6 +6,9 @@ sp:
 spring: 
     application:
       name: user-service
+    cloud: 
+     config:
+      override-none: true
       
 server:
   port: 8101      
@@ -20,6 +23,6 @@ management:
   endpoints:
     web:
       exposure:
-        include: refresh
+        include: refresh,health,info
      
      
